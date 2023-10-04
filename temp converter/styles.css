@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    background-image: url(background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+form{
+    gap: 2rem;
+    
+}
+h1 {
+    color: rgb(48, 62, 213);
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+#temp {
+    width: 110px;
+    height: 34px;
+    border-radius: 1rem;
+    margin: 12px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    transition: .5s;
+}
+#temp:hover {
+    background-color: rgb(135, 174, 228);
+}
+#temp_diff {
+    width: 120px;
+    height: 34px;
+    border-radius: 1rem;
+    margin: 12px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    transition: .5s;
+}
+#temp_diff:hover {
+    background-color: rgb(135, 174, 228);
+}
+#submit {
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    background-color: rgb(48, 62, 213);
+    padding:.5rem 1rem;
+    transition: all 0.5s ease;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+#submit:hover{
+    background-color: rgb(48, 83, 222);
+    cursor: pointer;
+}
+option{
+    background-color: rgb(27, 121, 203);
+    font-weight: 600;
+}
+#result{
+    font-size: 2rem;
+    -webkit-text-stroke: 2.3px #1453c9; /*border color*/
+    color: transparent;
+    font-weight: 200;
+    letter-spacing: 4px;
+    text-decoration: underline;
+}
+.glass{
+    z-index: 100;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background: linear-gradient(135deg, rgba(255,255,255,0.8),rgba(109, 106, 106, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(50px);
+    border-radius: 2rem;
+    border: 1px solid rgba(133, 132, 132, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(172, 166, 166, 0.38);
+}
